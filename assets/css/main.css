@@ -175,3 +175,27 @@ form {
     top: 99%;
   }
 }
+
+@media (max-width:500.5px) {
+  .info::before {
+    left: 48.6%;
+  }
+}
+
+@media (max-width:414.5px) {
+  .info::before {
+    left: 48.4%;
+  }
+}
+
+@media (max-width:366.5px) {
+  .info::before {
+    left: 48.2%;
+  }
+}
+
+@media (max-width:316.5px) {
+  .info::before {
+    left: 48%;
+  }
+}
