@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  font-family: "Cairo", sans-serif;
+}
+
+:root {
+  --main-color: #5C008D;
+  --white: #FFFFF0;
+}
+
+.myIcon {
+  color: var(--white);
+  font-size: 30px;
+  background-color: var(--main-color);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+p {
+  color: var(--main-color)
+}
+
+.info,
+.cinfo {
+  position: relative;
+}
+
+.info::after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: -15%;
+  top: 35%;
+}
+
+.info::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  left: -15%;
+  top: 30%;
+  z-index: 20;
+}
+
+.cinfo::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  left: -120%;
+  top: 47%;
+  z-index: 20;
+}
+
+.mb-10 {
+  margin-bottom: 150px;
+}
+
+form {
+  -webkit-box-shadow: 0px 0px 7px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  color: var(--main-color);
+}
+
+.form-title {
+  -webkit-box-shadow: 0px 11px 11px -11px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 11px 11px -11px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 11px 11px -11px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.containers {
+  width: 85%;
+  margin: auto;
+}
+
+.BTTN {
+  border: none;
+  border-radius: 9px;
+  padding: 9px 50px;
+}
+
+.myBtn {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.myBtn:hover {
+  background-color: white;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+
+}
+
+.myBtn-outlined {
+  border: 2px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.myBtn-outlined:hover {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+}
+
+.myBtn-outlined-danger {
+  border: 2px solid #f61515;
+  background-color: transparent;
+  color: #f61515;
+}
+
+.myBtn-outlined-danger:hover {
+  border: 2px solid #f61515;
+  background-color: #f61515;
+  color: white;
+}
+
+@media (max-width:1399.5px) {
+  .cinfo::after {
+    content: "";
+    left: -80%;
+  }
+}
+
+@media (max-width:1199.5px) {
+  .cinfo::after {
+    content: "";
+    left: -40%;
+  }
+}
+
+@media (max-width:992.5px) {
+
+  .info::after {
+    width: 5px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+  }
+
+  .info::before {
+    left: 49%;
+    top: 100%;
+  }
+
+  .cinfo::after {
+    left: 40%;
+    top: 200px;
+  }
+}
+
+@media (max-width:768.5px) {
+  .info::before {
+    left: 48.8%;
+    top: 99%;
+  }
+}
